@@ -19,11 +19,12 @@ I haven't tried it elsewhere and so I can't vouch for it elsewhere.
 
 ## Deploying the files
 
-You'll want to create a `chorus` user. Here is an example for debian based systems:
+You'll want to create a `chorus` user and add it to the `sudo` group. Here is an example for debian based systems:
 
 
 ```bash
 sudo useradd -r -d /opt/chorus -s /bin/bash chorus
+sudo adduser chorus sudo
 ```
 
 You'll want to make the following directories
